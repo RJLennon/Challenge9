@@ -1,8 +1,8 @@
 
-# This is the title
+# Project 1
 
 ## Description
-cool description
+This is the description
 
 ## Table of Contents
 - [Installation](#installation)
@@ -11,19 +11,19 @@ cool description
 - [License](#license)
 
 ## Installation
-install me please
+This is how you do the installation
 
 ## Usage
-this is very user friendly
+This is how you use the application
 
 ## Credits
-rob lennon
+Rob Lennon
 
 GitHub: RJLennon
 
 Email: robjohnlennon@gmail.com
 
-no testing completed
+No testing
 
 ## License
-Choice 2
+Choice 3
