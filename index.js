@@ -58,11 +58,38 @@ const questions = [
 
 const readmeContent = ({title,description,installation,usage,contributing,tests,license,github,email}) => {
   return `
-    This is a test document.
+    # ${title}
 
-    Title: ${title}
-    Description: ${description}
-    Email: ${email}
+    ## Description
+
+    ${description}
+
+    ## Table of Contents
+
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Credits](#credits)
+    - [License](#license)
+
+    ## Installation
+
+    ${installation}
+
+    ## Usage
+
+    ${usage}
+
+    ## Credits
+
+    ${contributing}
+    ${github}
+    ${email}
+
+    ${tests}
+
+    ## License
+
+    ${license}
   `;
 };
 

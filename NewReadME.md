@@ -1,7 +1,34 @@
 
-    This is a test document.
+    # New Project
 
-    Title: 1
-    Description: 2
-    Email: NEW EMAIL
+    ## Description
+
+    This is a really cool description
+
+    ## Table of Contents
+
+    -[Installation](#installation)
+    - [Usage](#usage)
+    - [Credits](#credits)
+    - [License](#license)
+
+    ## Installation
+
+    You install the app by clicking the button
+
+    ## Usage
+
+    These are some really cool instructions
+
+    ## Credits
+
+    Rob Lennon
+    RJLennon
+    robjohnlennon@gmail.com
+
+    No testing completed
+
+    ## License
+
+    Choice 2
   
