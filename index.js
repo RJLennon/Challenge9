@@ -106,7 +106,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((answers) => {
       const readmeData = readmeContent(answers);
-      writeToFile('NewReadME.md',readmeData);
+      writeToFile('NewREADME.md',readmeData);
     });
 };
 
