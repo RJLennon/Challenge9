@@ -56,42 +56,39 @@ const questions = [
 //Badge for each License and notice to the License section.
 //Setup table of contents
 
-const readmeContent = ({title,description,installation,usage,contributing,tests,license,github,email}) => {
+const readmeContent = ({ title, description, installation, usage, contributing, tests, license, github, email }) => {
   return `
-    # ${title}
+# ${title}
 
-    ## Description
+## Description
+${description}
 
-    ${description}
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
 
-    ## Table of Contents
+## Installation
+${installation}
 
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Credits](#credits)
-    - [License](#license)
+## Usage
+${usage}
 
-    ## Installation
+## Credits
+${contributing}
 
-    ${installation}
+GitHub: ${github}
 
-    ## Usage
+Email: ${email}
 
-    ${usage}
+${tests}
 
-    ## Credits
-
-    ${contributing}
-    ${github}
-    ${email}
-
-    ${tests}
-
-    ## License
-
-    ${license}
-  `;
+## License
+${license}
+`;
 };
+
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
