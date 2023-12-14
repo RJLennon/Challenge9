@@ -56,14 +56,34 @@ const questions = [
 //Badge for each License and notice to the License section.
 //Setup table of contents
 
+const readmeContent = ({title,description,installation,usage,contributing,tests,license,github,email}) => {
+  return `
+    This is a test document.
+
+    Title: ${title}
+    Description: ${description}
+    Email: ${email}
+  `;
+};
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     //Write data to the file
+    fs.writeFile(fileName, data, (err) => {
+      if (err) {
+        console.error('An error occured',err);
+        return;
+      }
+      console.log('file created!');
+    });
 };
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt(questions);
+    inquirer.prompt(questions).then((answers) => {
+      const readmeData = readmeContent(answers);
+      writeToFile('NewReadME.md',readmeData);
+    });
 };
 
 // Function call to initialize app
