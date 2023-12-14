@@ -6,30 +6,55 @@ const fs = require('fs');
 const questions = [
     {
         type: 'input',
-        message: 'Question 1?',
-        name: 'Question1',
+        message: 'Enter project title',
+        name: 'title',
       },
       {
         type: 'input',
-        message: 'Question 2?',
-        name: 'Question2',
+        message: 'Enter a description',
+        name: 'description',
       },
       {
         type: 'input',
-        message: 'Question 3?',
-        name: 'Question3',
+        message: 'Enter installation instructions',
+        name: 'installation',
       },
       {
         type: 'input',
-        message: 'Question 4?',
-        name: 'Question4',
+        message: 'Enter usage information',
+        name: 'usage',
       },
       {
         type: 'input',
-        message: 'Question 5?',
-        name: 'Question5',
+        message: 'Enter contribution guidelines',
+        name: 'contributing',
+      },
+      {
+        type: 'input',
+        message: 'Enter test instructions',
+        name: 'tests',
+      },
+      {
+        type: 'list',
+        message: 'Pick one',
+        name: 'license',
+        choices: ["Choice 1","Choice 2","Choice 3"],
+      },
+      {
+        type: 'input',
+        message: 'Enter your GitHub user name',
+        name: 'github',
+      },
+      {
+        type: 'input',
+        message: 'Enter your email address',
+        name: 'email',
       },
 ];
+
+//Need to add an object for the License Options based on the choice.
+//Badge for each License and notice to the License section.
+//Setup table of contents
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
